@@ -3,5 +3,4 @@
 ## 0.1.0
 
 * Initial Release!
-* Includes `validatePhone` function
-
+* Includes `validatePhone` function as example
