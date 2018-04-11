@@ -9,7 +9,7 @@
   "scripts": {
     "build": "babel lib -d build",
     "build:watch": "babel lib -w -d build",
-    "lint": "standard lib/**.js __tests__/**.js",
+    "lint": "standard --fix lib/**.js __tests__/**.js",
     "lint:watch": "esw -w lib/** test/**",
     "precommit": "lint-staged",
     "prepublish": "npm run build",
@@ -59,7 +59,7 @@
     "moduleDirectories": ["node_modules", "./"]
   },
   "lint-staged": {
-    "*.{js}": ["standard --fix lib/**.js __tests__/**.js", "git add"]
+    "*.{js}": ["standard --fix", "git add"]
   },
   "standard": {
     "globals": ["describe", "it", "expect"]
