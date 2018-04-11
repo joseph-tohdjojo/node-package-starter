@@ -59,7 +59,7 @@
     "moduleDirectories": ["node_modules", "./"]
   },
   "lint-staged": {
-    "*.{js}": ["standard --fix", "git add"]
+    "*.{js}": ["standard --fix lib/**.js __tests__/**.js", "git add"]
   },
   "standard": {
     "globals": ["describe", "it", "expect"]
