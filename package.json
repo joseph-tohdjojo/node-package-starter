@@ -61,7 +61,7 @@
   "lint-staged": {
     "linters": {
       "*.{json,css,md}": ["prettier --write", "git add"],
-      "*.js": ["standard --fix", "git add"]
+      "lib/**/*.js": ["standard --fix", "git add"]
     }
   },
   "standard": {
